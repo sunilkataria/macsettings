@@ -1,0 +1,2 @@
+# macsettings
+mac settings
