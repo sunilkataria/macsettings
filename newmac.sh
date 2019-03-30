@@ -24,4 +24,7 @@ defaults write com.apple.screencapture location ~/ScreenShots/
 
 killall SystemUIServer
 
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+
+
 
