@@ -24,7 +24,13 @@ defaults write com.apple.screencapture location ~/ScreenShots/
 
 killall SystemUIServer
 
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true 
+defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder QuitMenuItem -bool true
 
+killall Finder
