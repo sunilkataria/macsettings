@@ -17,6 +17,9 @@ defaults write com.apple.screencapture name "ScreenShot"
 
 #defaults write com.apple.screencapture name "" Revert ScreenShot Settings
 
+# Notifications set to 1 seconds
+defaults write com.apple.notificationcenterui bannerTime 1
+
 mkdir -p ~/ScreenShots
 mkdir -p ~/MyTrash
 
